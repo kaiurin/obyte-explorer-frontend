@@ -16,18 +16,17 @@
     <meta name="twitter:description" content="{og_text}">
     <meta name="twitter:image" content="https://explorer.obyte.org/logoForOg.png">
     <link rel="icon" href="/icon_16x16@2x.png">
-    <script type="module" src="/src/assets/js/cytoscape.min.js"></script>
-    <script type="module" src="/src/assets/js/dagre.min.js"></script>
+    <!--preload-links-->
   </head>
   <body>
   <noscript>
     We're sorry but Obyte Explorer doesn't work properly without JavaScript enabled. Please enable JavaScript to continue.
   </noscript>
-    <div id="app"></div>
+    <div id="app"><!--app-html--></div>
     <div id="cy" class="right-0 xl:right-[34%] overscroll-none"></div>
     <div id="scroll" class="right-0 xl:right-[34%] overscroll-none">
       <div id="scrollBody">&nbsp;</div>
     </div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/entry-client.js"></script>
   </body>
 </html>

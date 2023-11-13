@@ -7,20 +7,20 @@ import { ArrowCircleUpIcon, ExclamationIcon } from "@heroicons/vue/outline";
 import { EventNames } from "../../enum/eventEnums";
 import { desc } from "../../configs/meta";
 
-import {
-  highlightNode,
-  nextHandler,
-  updDagHandler,
-  prevHandler,
-  deletedHandler,
-  newHandler,
-  setEmitHandler,
-  setClickHandler,
-  setCurrentUnit,
-  getNew,
-  scrollUp,
-  scrollDown,
-} from "../../services/cytoscape.js";
+// import {
+//   highlightNode,
+//   nextHandler,
+//   updDagHandler,
+//   prevHandler,
+//   deletedHandler,
+//   newHandler,
+//   setEmitHandler,
+//   setClickHandler,
+//   setCurrentUnit,
+//   getNew,
+//   scrollUp,
+//   scrollDown,
+// } from "../../services/cytoscape.js";
 
 import { useGlobalStateStore } from "../../stores/globalState";
 import { useInfoStore } from "../../stores/info";
@@ -48,12 +48,12 @@ useHead({
   title,
 });
 
-function updDag(data) {
-  updDagHandler(data);
-  if (route.params.unit) {
-    setCurrentUnit(route.params.unit);
-  }
-}
+// function updDag(data) {
+//   updDagHandler(data);
+//   if (route.params.unit) {
+//     setCurrentUnit(route.params.unit);
+//   }
+// }
 
 function hideAlert() {
   alertShown.value = false;
